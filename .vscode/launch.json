@@ -6,11 +6,18 @@
     "configurations": [
         
         
+        
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
             "file": "/Users/tardes/Documents/GitHub/joser-royectos-javascript.github.io/index.html"
+        }
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open ejercicios_array_01.js",
+            "file": "/Users/tardes/Documents/GitHub/joser-royectos-javascript.github.io/./javascript/arrays/ejercicios_array_1.js"  
         }
     ]
 }
