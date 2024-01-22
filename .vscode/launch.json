@@ -1,6 +1,10 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+
+
+
     
         {
             "type": "chrome",
@@ -12,7 +16,7 @@
             "type": "node",
             "name": "Ejecutar el archivo actual",
             "request": "launch",
-            "program": "${workspaceFolder}/javascript/arrays/ejercicios_array_1.js"
+            "program": "${workspaceFolder}/ejercicio_07_http_request_omdb.html"
         }
     ]
 }

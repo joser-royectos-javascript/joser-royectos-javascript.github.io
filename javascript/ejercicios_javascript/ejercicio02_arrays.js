@@ -15,7 +15,6 @@ console.log(mascotas);
 let mascoEjpg = mascotas.filter(masco => {
     return masco.toUpperCase().includes('JPG');
 });
-
 console.log(mascoEjpg);
 
 let posPunto = mascoEjpg.lastIndexOf(".");
