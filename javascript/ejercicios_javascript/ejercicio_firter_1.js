@@ -1,21 +1,21 @@
 /*
 
-Crear un Array con 5 objetos Pelicula que tienen los atributos:
-- Titulo.
+Crear un Array con 5 objetos Cerveza que tienen los atributos:
+- tipo.
 - Número de temporadas.
 - Plataformas (N,P,H)
 
 com Map, añadir un atributo 
 
 /*
-Creando Array con los Peliculas
+Creando Array con los Cervezas
 */
     let serie = [
-    {titulo : "Serie_A", numeroTemporada : "3", plataforma : "N"},
-    {titulo : "Serie_B", numeroTemporada : "4", plataforma : "N"},
-    {titulo : "Serie_C", numeroTemporada : "5", plataforma : "H"},
-    {titulo : "Serie_D", numeroTemporada : "3", plataforma : "P"},
-    {titulo : "Serie_F", numeroTemporada : "2", plataforma : "T"}
+    {tipo : "Serie_A", numeroTemporada : "3", plataforma : "N"},
+    {tipo : "Serie_B", numeroTemporada : "4", plataforma : "N"},
+    {tipo : "Serie_C", numeroTemporada : "5", plataforma : "H"},
+    {tipo : "Serie_D", numeroTemporada : "3", plataforma : "P"},
+    {tipo : "Serie_F", numeroTemporada : "2", plataforma : "T"}
 ];
 
 //añadir atributo
