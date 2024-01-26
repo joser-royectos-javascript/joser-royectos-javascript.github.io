@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Elementos</title>
+    <link rel="stylesheet" href="estilo_getelemrnt.css">
+</head>
+<body>
+    <div id="principal" class="importante_2">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <h1>Título 1</h1>
+        <h1>Título 2</h1>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+    </div>
+    <button id="boton">Contar Elementos</button>
+    <div id="valores"></div>
+    <div id="contador" class="contador_de_elementos">
+        <table>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Contador</th>
+            </tr>
+            <tr>
+                <td>div</td>
+                <td id="contador-div">0</td>
+            </tr>
+            <tr>
+                <td>h1</td>
+                <td id="contador-h1">0</td>
+            </tr>
+            <tr>
+                <td>ul</td>
+                <td id="contador-ul">0</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="elementos.js"></script>
+</body>
+</html>
