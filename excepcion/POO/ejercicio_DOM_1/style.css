@@ -1,24 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #f0f0f0;
     padding: 20px;
-    text-align: center;
 }
 
-button {
-    margin-bottom: 10px;
-}
-
-article {
+.caratula {
     border: 1px solid #ccc;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
-img {
+.caratula h2 {
+    margin-top: 0;
+}
+
+.caratula img {
     max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }

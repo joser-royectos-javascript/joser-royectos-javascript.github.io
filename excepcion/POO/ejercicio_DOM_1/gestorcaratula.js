@@ -1,33 +1,32 @@
-const URL = "https://fpaniaguaangular.github.io/gamecovers/assets/gamecovers/covers_gameboy/";
+const URL_CARATULAS = "https://demo6481436.mockable.io/caratulas";
+const URL_IMAGENES = "https://fpaniaguaangular.github.io/gamecovers/assets/gamecovers/covers_gameboy/";
 
-document.getElementById("btnMostrar").addEventListener("click", mostrarCaratulas);
-
-document.getElementById("btnFiltrar").addEventListener("click", filtrarPorNombre);
-
+// Función para obtener y mostrar las carátulas
 async function mostrarCaratulas() {
     try {
-        const response = await fetch(URL);
+        const response = await fetch(URL_CARATULAS);
         const data = await response.json();
-        const container = document.getElementById("caratulasContainer");
-        container.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevas carátulas
+
+        const caratulasDiv = document.getElementById("caratulas");
         data.forEach(juego => {
             const ficha = generaFicha(juego);
-            container.appendChild(ficha);
+            caratulasDiv.appendChild(ficha);
         });
     } catch (error) {
-        console.error("Error al cargar las carátulas:", error);
+        console.error("Error al obtener las carátulas:", error);
     }
 }
 
+// Función para generar una ficha de juego
 function generaFicha(juego) {
     const articulo = document.createElement("article");
-    articulo.setAttribute("class", "vj");
+    articulo.classList.add("caratula");
 
-    const titulo = document.createElement("h1");
+    const titulo = document.createElement("h2");
     titulo.textContent = juego.title;
 
     const imagen = document.createElement("img");
-    imagen.src = `${URL}${juego.image}`;
+    imagen.src = `${URL_IMAGENES}${juego.image}`;
 
     articulo.appendChild(titulo);
     articulo.appendChild(imagen);
@@ -35,7 +34,5 @@ function generaFicha(juego) {
     return articulo;
 }
 
-function filtrarPorNombre() {
-    const nombre = prompt("Ingrese el nombre del juego a buscar:");
-    // Realizar lógica de filtrado por nombre aquí
-}
+// Mostrar las carátulas al cargar la página
+mostrarCaratulas();
