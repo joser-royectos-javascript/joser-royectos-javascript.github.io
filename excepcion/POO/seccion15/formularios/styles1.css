@@ -1,0 +1,37 @@
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #44475a;
+    border-radius: 15px;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="color"],
+input[type="submit"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    background-color: #6272a4;
+    color: #f8f8f2;
+}
+
+input[type="submit"] {
+    background-color: #ff79c6;
+    color: #282a36;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #bd93f9;
+}

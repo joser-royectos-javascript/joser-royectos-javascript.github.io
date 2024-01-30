@@ -1,0 +1,39 @@
+body {
+    background-color: #191a20;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+}
+
+#loquesea {
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 55%;
+    background-color: #543e3e;
+    border-radius: 15px;
+    width: 300px;
+}
+
+#nomre_1,
+#apellido_1,
+#edad_1,
+#color_1,
+[type="submit"] {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    background-color: #212122;
+    color: #f6f6f1;
+}
+
+[type="submit"] {
+    background-color: #edc3db;
+    color: #282a36;
+    cursor: pointer;
+}
+
+[type="submit"]:hover {
+    background-color: #57535c;
+}

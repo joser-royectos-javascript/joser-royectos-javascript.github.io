@@ -1,0 +1,29 @@
+body {
+    position: absolute;
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+}
+
+#emoticono_1 {
+    position: relative;
+    font-size: 48px;
+    margin: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="range"] {
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
+
+input[type="submit"] {
+    background-color: #6272a4;
+    color: #f8f8f2;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
