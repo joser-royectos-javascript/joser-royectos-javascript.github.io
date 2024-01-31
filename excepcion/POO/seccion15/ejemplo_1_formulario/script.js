@@ -1,0 +1,1 @@
+document.querySelector("#bEnviar").addEventListerne("click",(e))
