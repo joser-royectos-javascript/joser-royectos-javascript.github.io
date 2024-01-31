@@ -6,9 +6,10 @@ loginForm.addEventListener('submit', async (event) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    const response = await fetch('https://lucidar.me/en/security/files/100000-most-common-passwords.json');
+    const response = await fetch('file:///Users/tardes/Documents/GitHub/joser-royectos-javascript.github.io/excepcion/POO/seccion15/ejercicio_2_form/passwords.json');
     const passwords = await response.json();
-
+    fetch(response);
+    fetch(response, password);
     if (passwords.includes(password)) {
         alert('La contraseña ingresada no es segura. Por favor, elija otra.');
     } else {
