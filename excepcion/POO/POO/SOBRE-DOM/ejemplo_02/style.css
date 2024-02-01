@@ -19,14 +19,10 @@ header{
     font-size: 24px;
     color: rgb(255, 255, 255);
     padding: 2em 0 2em 0;
-    position:relative;
-    top: 0;
+    position:absolute;
+    top:0;
     position: sticky;
-    transition: width 0.1ms;
-}
-header:before{
-    color: rgb(175, 216, 54);
-    transition: width 0.1ms;
+    transition: width 0.5s;
 }
 header:hover {
     color: rgb(224, 224, 224);
@@ -40,7 +36,7 @@ header:hover {
     font-size: 14px;
     color: rgb(239, 233, 233);
     padding: 3em 0 3em 0;  
-    flex: 1 1 150px; 
+    flex: 1 1 100px; 
 }
 .titulo{margin-bottom: 10%;}
 main{
@@ -48,7 +44,7 @@ main{
     font-size: 14px;
     color: rgb(239, 233, 233);
     padding: 3em 0 3em 0;
-    flex: 5 5 300px;    
+    flex: 5 5 150px;    
      
 }
 .derecha{
@@ -56,19 +52,24 @@ main{
     font-size: 14px;
     color: rgb(239, 233, 233);
     padding: 1em 0 1em 0; 
-    flex: 1 1 50px;   
+    flex: 1 1 100px;   
 }
 footer{
     background: rgb(11, 11, 11);
     font-size: 14px;
     color: rgb(140, 129, 129);
     padding: 1em 0 1em 0; 
+    position: relative;
+    position: sticky;
+    bottom: -2ex;
+    width: 100%;
+    transition: width 0.01s;
 }
 aside {
     border: 2px solid rgb(26, 29, 79);
     border-radius: 12px;}
 article {
-    padding-bottom: 15vh;
+    padding-bottom: 15%vh;
     border: 2px solid rgb(118, 118, 149);
     border-radius: 12px;}
 /* Media query */
@@ -77,9 +78,9 @@ article {
         flex-direction: column;
     }
     main {
-        padding: 6em 0;
+        padding: 7em 0;
     }
-    footer{
-        text-align: right;
+    footer {
+        padding: 1em 0;
     }
 }
