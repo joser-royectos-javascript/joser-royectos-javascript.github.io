@@ -14,20 +14,20 @@ body{
     flex-direction: column;
 }
 header{
+    width: 100%;
     border-radius: 15px;
     background: rgb(20, 20, 20);
     font-size: 24px;
     color: rgb(255, 255, 255);
     padding: 2em 0 2em 0;
-    position:absolute;
     top:0;
-    position: sticky;
+    position: fixed;
     transition: width 0.5s;
 }
 header:hover {
     color: rgb(224, 224, 224);
 }
-.principal,footer{
+.principal{
     display: flex;
     flex: 1;
 }
@@ -69,7 +69,6 @@ aside {
     border: 2px solid rgb(26, 29, 79);
     border-radius: 12px;}
 article {
-    padding-bottom: 15%vh;
     border: 2px solid rgb(118, 118, 149);
     border-radius: 12px;}
 /* Media query */
@@ -79,8 +78,5 @@ article {
     }
     main {
         padding: 7em 0;
-    }
-    footer {
-        padding: 1em 0;
     }
 }
