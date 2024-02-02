@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333; /* Color de fondo oscuro */
+}
+
+.reloj {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff; /* Color del texto blanco */
+    border: 4px solid rgb(19, 19, 44); /* Borde sólido azul */
+    border-radius: 15px; /* Radio de borde de 15px */
+    padding: 10px; /* Espaciado interior de 10px */
+}
