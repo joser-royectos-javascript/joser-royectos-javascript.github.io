@@ -1,28 +1,29 @@
-let canvas = document.getElementById("miCanvas");
-let ctx = canvas.getContext("2d");
+const canvas = document.getElementById("miCanvas");
+const ctx = canvas.getContext("2d");
 
-let enemigo = new Enemigo(ctx);
-let heroe = new Heroe(ctx);
+let heroe;
+let enemigo;
 
-function dibujarJuego() {
-    // Limpiar el lienzo
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+function iniciarJuego() {
+    heroe = new Heroe(canvas.width / 2, canvas.height - 60, 50, 50, ctx);
+    enemigo = new Enemigo(canvas.width / 2, 60, 50, 50, ctx);
 
-    // Dibujar enemigo
-    enemigo.dibujar();
-
-    // Dibujar héroe
-    heroe.dibujar();
-
-    // Actualizar posición del enemigo
-    enemigo.mover();
-
-    // Actualizar posición del héroe
-    heroe.mover();
-
-    // Volver a dibujar en el siguiente cuadro
-    requestAnimationFrame(dibujarJuego);
+    setInterval(() => {
+        enemigo.disparar();
+    }, 3000);
 }
 
-// Iniciar el bucle de dibujo del juego
-dibujarJuego();
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    heroe.update();
+    heroe.draw();
+
+    enemigo.update();
+    enemigo.draw();
+
+    requestAnimationFrame(draw);
+}
+
+iniciarJuego();
+draw();
