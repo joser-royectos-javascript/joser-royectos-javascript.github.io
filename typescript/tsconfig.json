@@ -1,21 +1,22 @@
 {
     "compilerOptions": {
-        "target": "ES2021", // "target": "ES6",   // Versión de ECMAScript a la que se compilará el código
-        "outDir": "./build",                      // Directorio de salida para los archivos compilados
+        "target": "ES2021",
+        "outDir": "./build",
+        "noEmitOnError": true
+    }
+}
+
+/*{
+    "compilerOptions": {
+        "target": "ES2021",
+        "outDir": "./build",
         "noEmitOnError": true,
-        "module": "commonjs",                     // Sistema de módulos a utilizar (puedes cambiarlo si prefieres otro)
-        "strict": true,                           // Habilita las opciones de estricto modo
+        "module": "commonjs", // Descomentada para especificar el sistema de módulos
+        "strict": true,
         "noImplicitAny": false,
-        "esModuleInterop": true,                  // Habilita la interoperabilidad de módulos ES
-        "skipLibCheck": true,                     // Evita la comprobación de librerías de definiciones de tipo
-        "forceConsistentCasingInFileNames": true, // Obliga a que los nombres de archivo tengan la misma capitalización                      
-        //"rootDir": "./src",                       // Directorio raíz de los archivos fuente
-        "strictNullChecks": true,                 // Comprueba nulos y undefined de forma estricta
-        },
-        "include": [
-        "src/**/*.ts"                             // Patrón de inclusión de archivos TypeScript
-        ],
-        "exclude": [ 
-        "node_modules"                            // Carpetas o archivos excluidos de la compilación
-        ]
-  }
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true
+    }
+}*/
